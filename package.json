@@ -2,7 +2,7 @@
   "name": "pt-backend",
   "version": "0.0.1",
   "description": "Polaris trade backend",
-  "author": "Randall Valenciano",
+  "author": "Randall Valenciano ",
   "license": "MIT",
   "keywords": [
     "nestjs",
@@ -44,11 +44,11 @@
     "start:db": "npm run migrate:up && npm run prisma:generate && npm run seed",
     "seed": "prisma db seed",
     "postinstall": "npm run prisma:generate",
-    "docker:migrate": "docker-compose -f docker-compose.migrate.yml up -d",
-    "docker:db": "docker-compose -f docker-compose.db.yml up -d",
+    "docker:migrate": "docker compose -f docker-compose.migrate.yml up",
+    "docker:db": "docker compose -f docker-compose.db.yml up -d",
     "docker:seed": "docker exec -it nest-api npm run seed",
-    "docker": "docker-compose up -d",
-    "docker:build": "docker-compose build"
+    "docker": "docker compose up -d",
+    "docker:build": "docker compose build"
   },
   "dependencies": {
     "@apollo/server": "^4.7.5",
