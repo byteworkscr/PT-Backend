@@ -1,8 +1,8 @@
 {
-  "name": "nestjs-prisma-client-starter",
+  "name": "pt-backend",
   "version": "0.0.1",
-  "description": "NestJS Prisma Client Starter Project",
-  "author": "Marc Stammerjohann",
+  "description": "Polaris trade backend",
+  "author": "Randall Valenciano",
   "license": "MIT",
   "keywords": [
     "nestjs",
