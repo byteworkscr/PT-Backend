@@ -11,6 +11,7 @@ import { PostsModule } from './posts/posts.module';
 import config from './common/configs/config';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { GqlConfigService } from './gql-config.service';
+import { StellarModule } from './stellar/stellar.module';
 
 @Module({
   imports: [
@@ -36,6 +37,7 @@ import { GqlConfigService } from './gql-config.service';
     AuthModule,
     UsersModule,
     PostsModule,
+    StellarModule,
   ],
   controllers: [AppController],
   providers: [AppService, AppResolver],
